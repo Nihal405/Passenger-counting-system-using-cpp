@@ -1,0 +1,50 @@
+Documentation for Bus Passenger Monitoring System
+The Bus Passenger Monitoring System is a program that tracks the passengers boarding the bus, their destination, and fare, and provides a database of all the passengers. It is useful for monitoring the passengers and collecting the fare accordingly.
+
+Getting Started :
+To run the program, simply compile the megafinal.cpp file and execute the resulting binary file.
+
+Usage:
+When the program starts, it provides a menu with four options:
+
+Record a passenger boarding the bus at the current stop.
+Simulate moving to the next stop.
+View the passenger database.
+Exit the system.
+Recording a Passenger
+When selecting the first option, the user is prompted to enter the name and destination of the passenger. The program calculates the fare based on the destination and records the passenger's name, destination, fare, and the current time in the passenger database.
+
+If the bus is full, the program displays an error message and does not record the passenger.
+
+Moving to the Next Stop:
+When selecting the second option, the program simulates moving to the next stop by incrementing the current stop number by 1.
+
+Viewing the Passenger Database:
+When selecting the third option, the program displays the passenger database, which includes the passenger's name, destination, fare, and time of boarding. The program also calculates and displays the total fare collected.
+
+Exiting the System:
+When selecting the fourth option, the program exits and displays the passenger boarding count at each stop.
+
+Code Details
+The program is written in C++ and uses the following libraries:
+
+iostream: For input and output operations.
+map: For storing the passenger boarding count at each stop.
+vector: For storing the passenger database.
+ctime: For getting the current time.
+The program uses a struct Passenger to represent a passenger, which includes the passenger's name, destination, fare, and time of boarding. The program also defines a constant MAX_PASSENGERS to limit the number of passengers that can board the bus.
+
+The main function of the program initializes the variables and displays the menu with the four options. It then enters a while loop to prompt the user for an action and execute the corresponding function until the user selects the option to exit the system.
+
+The program includes three functions:
+
+recordPassenger(): Records a passenger boarding the bus.
+moveToNextStop(): Simulates moving to the next stop.
+viewPassengerDatabase(): Displays the passenger database and the total fare collected.
+
+
+Conclusion
+The Bus Passenger Monitoring System is a simple but useful program for tracking the passengers boarding the bus and collecting the fare accordingly. It is easy to use and can be customized to suit the needs of different bus routes.
+
+
+
